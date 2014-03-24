@@ -1,0 +1,7 @@
+
+# Copyright (c) 2000-2008 Synology Inc. All rights reserved.
+
+[app]
+mail_str_meta_desc	=	"A Mail Station 2 által nyújtott webmail szolgáltatás segítségével elérheti a DiskStationön tárolt e-maileket. Emellett bármely más e-mail kiszolgálóról is kaphat levelet, s így összes e-mailjét kényelmesen, egy helyen tárolhatja."
+depend_packages	=	"A csomag telepítése előtt telepítenie kell a következőt: Mail Server."
+require_service	=	"Ez a csomag a(z) Mail Server engedélyezését igényli."

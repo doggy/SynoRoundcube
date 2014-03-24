@@ -1,0 +1,5 @@
+#### .procmailrc
+MAILDIR="_currentuserdirectory"
+DEFAULT=$MAILDIR/.Maildir/
+LOGFILE=/dev/null
+VERBOSE=off

@@ -1,0 +1,7 @@
+
+# Copyright (c) 2000-2008 Synology Inc. All rights reserved.
+
+[app]
+mail_str_meta_desc	=	"Mail Station 2 fournit un service webmail afin que vous puissiez accéder aux courriers électroniques stockés sur votre DiskStation. De plus, vous pouvez également recevoir des courriers de n’importe quel autre serveur de messagerie pour conserver tous vos messages dans un seul endroit facile d’accès."
+depend_packages	=	"Installez « Mail Server » avant d’installer ce package."
+require_service	=	"Ce package requiert que vous activiez « Mail Server »."

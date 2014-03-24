@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:include file="/includes/links.html" />
+<script type="text/javascript" src="/functions.js"></script>
+<script type="text/javascript" src="/splitter.js"></script>
+<style type="text/css">
+#extmail-list { width: <roundcube:exp expression="!empty(cookie:extmailviewsplitter) ? cookie:extmailviewsplitter-5 : 295" />px; }
+#extmail-details { left: <roundcube:exp expression="!empty(cookie:extmailviewsplitter) ? cookie:extmailviewsplitter+5 : 305" />px;
+  <roundcube:exp expression="browser:ie ? ('width:expression((parseInt(this.parentNode.offsetWidth)-'.(!empty(cookie:extmailviewsplitter) ? cookie:extmailviewsplitter+5 : 305).')+\\'px\\');') : ''" />
+}
+</style>
+
+</head>
+<body class="iframe">
+
+<div id="extmail-title" class="boxtitle"><roundcube:object name="extmailsteptitle" /></div>
+
+<div id="extmail-details" class="boxcontent">
+  <roundcube:object name="extmailaddform" id="extmail-form" size="40" textareacols="70" textarearows="6" />
+
+  <script type="text/javascript">rcube_init_tabs('extmail-form')</script>
+
+  <div id="formfooter">
+    <div class="footerleft">
+	<roundcube:button command="plugin.extmail_add_cancel" type="input" class="button mainaction" label="cancel" />
+	<roundcube:button command="plugin.extmail_add_back" type="input" class="button mainaction" label="mailstation.back_before" condition="env:extmail_step != 1"/>
+	<roundcube:button command="plugin.extmail_add_forwardb" type="input" class="button mainaction" label="mailstation.forward_next" condition="env:extmail_step != 4" />
+	<roundcube:button command="plugin.extmail_add_save" type="input" class="button mainaction" label="save" condition="env:extmail_step == 4"/>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

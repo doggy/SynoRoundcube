@@ -1,0 +1,7 @@
+
+# Copyright (c) 2000-2008 Synology Inc. All rights reserved.
+
+[app]
+mail_str_meta_desc	=	"Mail Station 2 には、DiskStation の保存した電子メールへアクセスするための webmail サービスが装備されています。その他に、他の電子メール サービスからの電子メールを受信して、1つの任意の場所にすべての電子メールを保存することができます。"
+depend_packages	=	"このパッケージをインストールする前に「Mail Server」をインストールしてください。"
+require_service	=	"このパッケージでは、Mail Serverを有効にする必要があります。"

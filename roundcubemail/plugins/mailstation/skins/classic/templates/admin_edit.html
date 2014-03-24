@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:include file="/includes/links.html" />
+<link rel="stylesheet" type="text/css" href="/this/mailstation.css" />
+<script type="text/javascript" src="/functions.js"></script>
+<script type="text/javascript" src="/splitter.js"></script>
+<style type="text/css">
+#admin-list { width: <roundcube:exp expression="!empty(cookie:adminviewsplitter) ? cookie:adminviewsplitter-5 : 295" />px; }
+#admin-details { left: <roundcube:exp expression="!empty(cookie:adminviewsplitter) ? cookie:adminviewsplitter+5 : 305" />px;
+  <roundcube:exp expression="browser:ie ? ('width:expression((parseInt(this.parentNode.offsetWidth)-'.(!empty(cookie:adminviewsplitter) ? cookie:adminviewsplitter+5 : 305).')+\\'px\\');') : ''" />
+}
+</style>
+
+</head>
+<body class="iframe">
+
+<div id="admin-title" class="boxtitle"><roundcube:object name="mailstation.section" /></div>
+
+<div id="admin-details" class="boxcontent">
+  <roundcube:object name="adminform" id="admin-form" size="40" textareacols="70" textarearows="6" />
+
+  <script type="text/javascript">rcube_init_tabs('admin-form')</script>
+
+  <div id="formfooter">
+    <div class="footerleft">
+	<roundcube:button command="plugin.admin_save" type="input" class="button mainaction" label="save" />
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+depend_packages	=	"A csomag telepítése előtt telepítenie kell a következőt: Mail Server."
+require_service	=	"Ez a csomag a(z) Mail Server engedélyezését igényli."

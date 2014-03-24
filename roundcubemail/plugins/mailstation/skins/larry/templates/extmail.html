@@ -1,0 +1,45 @@
+<roundcube:object name="doctype" value="html5" />
+<html>
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:object name="doctype" value="html5" />
+<html>
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:include file="/includes/links.html" />
+<link rel="stylesheet" type="text/css" href="/this/mailstation.css" />
+</head>
+<body class="noscroll">
+
+<roundcube:include file="/includes/header.html" />
+
+<div id="mainscreen" class="offset">
+	<roundcube:include file="/includes/settingstabs.html" /> 
+	<div id="settings-right"> 
+		<div id="extmaillistbox" class="uibox listbox">
+			<h2 class="boxtitle"><roundcube:label name="mailstation.ext_account"/></h2>
+			<div class="scroller withfooter">
+				<roundcube:object name="extmailaccountlist" id="extmail-list" class="listing" cellspacing="0" summary="extmail list" type="list" noheader="true" />
+			</div> 
+		
+			<div class="boxfooter"> 
+				<roundcube:button command="plugin.extmail_add" type="link" class="listbutton add" classAct="listbutton add" innerClass="inner" content="+" />
+				<roundcube:button command="plugin.extmail_delete" type="link" class="listbutton delete disabled" classAct="listbutton delete" innerClass="inner" content="-" />
+			</div> 
+		</div>
+		
+		<div id="extmailscreen"> 
+			<div id="extmail-box" class="uibox contentbox"> 
+				<div class="iframebox">
+					<roundcube:object name="extmailframe" id="extmail-frame" style="width:100%; height:100%" frameborder="0" src="/watermark.html" />
+				</div>
+				<roundcube:object name="message" id="message" class="statusbar" />
+			</div> 
+		</div>
+	</div>
+</div>
+
+<roundcube:include file="/includes/footer.html" />
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+depend_packages	=	"在安装此套件前，请先安装 [Mail Server]。"
+require_service	=	"此套件需要您启动 [Mail Server]."

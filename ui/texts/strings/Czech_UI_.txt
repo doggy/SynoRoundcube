@@ -1,0 +1,2 @@
+depend_packages	=	"Před instalací tohoto balíčku nainstalujte „Mail Server“."
+require_service	=	"Tento balíček vyžaduje zapnutí služby „Mail Server“."

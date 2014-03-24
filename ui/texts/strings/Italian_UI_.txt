@@ -1,0 +1,2 @@
+depend_packages	=	"Installare Mail Server prima del pacchetto."
+require_service	=	"Questo pacchetto richiede l'abilitazione di Mail Server."

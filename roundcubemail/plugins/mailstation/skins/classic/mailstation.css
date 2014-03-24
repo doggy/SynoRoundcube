@@ -1,0 +1,68 @@
+#admin-list,
+#smtp-list,
+#extmail-list
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border: 1px solid #999999;
+  background-color: #F9F9F9;
+  overflow: hidden;
+}
+
+#admin-box,
+#smtp-box,
+#extmail-box
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #999999;
+  overflow: hidden;
+  background-color: #F2F2F2;
+}
+
+#admin-title,
+#smtp-title,
+#extmail-title
+{
+  z-index: 10;
+}
+
+body.iframe,
+#admin-frame,
+#smtp-frame,
+#extmail-frame
+{
+  background-color: #F2F2F2;
+  border: none;
+  min-height: 100%; /* Chrome 14 bug */
+}
+
+#admin-table,
+#smtp-table,
+#extmail-table
+{
+  width: 100%;
+  table-layout: fixed;
+}
+
+#admin-table tbody td,
+#smtp-table tbody td,
+#extmail-table tbody td
+{
+  cursor: default;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  height: 18px;
+}
+
+#admin-details table td.title,
+#smtp-details table td.title,
+#extmail-details table td.title
+{
+  font-weight: bold;
+  text-align: right;
+}

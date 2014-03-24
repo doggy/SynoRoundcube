@@ -1,0 +1,15 @@
+{
+	".url": {
+		"SYNO.SDS.MailStation": {
+			"type": "url",
+			"allUsers": true,
+			"title": "Mail Station",
+			"desc": "app:mail_str_meta_desc",
+			"texts": "texts",
+			"icon": "MailStation_{0}.png",
+			"protocol": "http",
+			"url": "/mail",
+			"port": "80"
+		}
+	}
+}

@@ -1,0 +1,7 @@
+
+# Copyright (c) 2000-2008 Synology Inc. All rights reserved.
+
+[app]
+mail_str_meta_desc	=	"Mail Station 2 提供的 webmail 服務可讓您存取 DiskStation 上存放的電子郵件。除此之外，您也可以接收其他郵件伺服器的郵件，方便您輕鬆管理您所有的電子郵件。"
+depend_packages	=	"在安裝此套件前，請先安裝 [Mail Server]。"
+require_service	=	"此套件需要您啟動 [Mail Server]."

@@ -1,0 +1,59 @@
+#smtplistbox,
+#extmaillistbox
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 294px;
+}
+
+#adminoptlistbox
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+}
+
+#admin-settings-right {
+	position: absolute;
+	top: 0;
+	left: 0px;
+	right: 0;
+	bottom: 0;
+}
+
+#admin-box
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 210px;
+}
+
+#smtp-box,
+#extmail-box
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 305px;
+}
+
+#admin-frame
+{
+  border-radius: 4px;
+}
+
+#admin-list,
+#smtp-list,
+#extmail-list
+{
+  width: 100%;
+  table-layout: fixed; 
+}
+

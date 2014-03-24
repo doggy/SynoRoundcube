@@ -1,0 +1,38 @@
+<roundcube:object name="doctype" value="html5" />
+<html>
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:include file="/includes/links.html" />
+<link rel="stylesheet" type="text/css" href="/this/mailstation.css" />
+</head>
+<body class="noscroll">
+
+<roundcube:include file="/includes/header.html" />
+
+<div id="mainscreen" class="offset">
+	
+	<div id="admin-settings-right">
+		
+		<div id="adminoptlistbox" class="uibox listbox"> 
+			<h2 class="boxtitle"><roundcube:label name="mailstation.section" /></h2> 
+			<div class="scroller withfooter">
+				<roundcube:object name="adminoptlist" id="admin-list" class="listing" cellspacing="0" summary="admin opt list" type="list" noheader="true" />
+			</div>
+		</div>
+		
+		<div id="adminscreen">
+			<div id="admin-box" class="uibox contentbox">
+				<div class="iframebox">
+					<roundcube:object name="adminframe" id="admin-frame" style="width:100%; height:100%" frameborder="0" src="/watermark.html" />
+				</div>
+				<roundcube:object name="message" id="message" class="statusbar" />
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+<roundcube:include file="/includes/footer.html" />
+
+</body>
+</html>

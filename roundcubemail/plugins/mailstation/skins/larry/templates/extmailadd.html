@@ -1,0 +1,31 @@
+<roundcube:object name="doctype" value="html5" />
+<html>
+<head>
+<title><roundcube:object name="pagetitle" /></title>
+<roundcube:include file="/includes/links.html" />
+<link rel="stylesheet" type="text/css" href="/this/mailstation.css" />
+</head>
+<body class="iframe floatingbuttons">
+
+	<div id="extmail-step-title" class="boxtitle">
+		<roundcube:object name="extmailsteptitle" /> 
+	</div>
+
+	<div id="extmail-form" class="boxcontent">
+	<roundcube:object name="extmailaddform" form="form" class="propform"/> 
+	<div id="footer">
+		<div class="footerleft formbuttons" style="padding: 0 12px 4px 0px;">
+			<roundcube:button command="plugin.extmail_add_cancel" type="input" class="button mainaction" label="cancel" />
+			<roundcube:button command="plugin.extmail_add_back" type="input" class="button mainaction" label="mailstation.back_before" condition="env:extmail_step != 1"/>
+			<roundcube:button command="plugin.extmail_add_forwardb" type="input" class="button mainaction" label="mailstation.forward_next" condition="env:extmail_step != 4" />
+			<roundcube:button command="plugin.extmail_add_save" type="input" class="button mainaction" label="save" condition="env:extmail_step == 4"/>
+		</div>
+	</div>
+
+	</form>
+</div>
+
+</body>
+</html>
+
+

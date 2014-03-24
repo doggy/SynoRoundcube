@@ -1,0 +1,2 @@
+depend_packages	=	"Lütfen bu paketi yüklemeden önce Mail Server yüklemesini yapın."
+require_service	=	"Bu paket Mail Server etkinleştirmesi yapmanızı gerektiriyor."

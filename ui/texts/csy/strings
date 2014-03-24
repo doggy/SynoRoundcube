@@ -1,0 +1,7 @@
+
+# Copyright (c) 2000-2008 Synology Inc. All rights reserved.
+
+[app]
+mail_str_meta_desc	=	"Mail Station 2 nabízí službu webmail pro přístup k e-mailům uloženým ve stanici DiskStation. Vedle toho můžete přijímat e-maily z jiných poštovních serverů, abyste měli všechny e-maily na jednom místě."
+depend_packages	=	"Před instalací tohoto balíčku nainstalujte „Mail Server“."
+require_service	=	"Tento balíček vyžaduje zapnutí služby „Mail Server“."

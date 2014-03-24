@@ -1,0 +1,7 @@
+
+# Copyright (c) 2000-2008 Synology Inc. All rights reserved.
+
+[app]
+mail_str_meta_desc	=	"Mail Station 2, DiskStation sunucunuzda depolanan e-postalara erişim amacıyla bir webmail hizmeti sunar. Ayrıca, tüm e-postalarınızı uygun olan tek bir yerde tutmak için başka posta sunucularından da posta alabilirsiniz"
+depend_packages	=	"Lütfen bu paketi yüklemeden önce Mail Server yüklemesini yapın."
+require_service	=	"Bu paket Mail Server etkinleştirmesi yapmanızı gerektiriyor."
