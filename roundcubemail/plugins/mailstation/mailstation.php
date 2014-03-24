@@ -56,6 +56,7 @@ class mailstation extends rcube_plugin
 
 		$this->add_hook('smtp_connect', array($this, 'before_connect'));
 		$this->add_hook('message_before_send', array($this, 'before_send'));
+		$this->add_hook('check_recent', array($this, 'check_recent'));
 
 		// admin
 		$this->register_action('plugin.syno_admin', array($this, 'admin_actions'));
@@ -75,6 +76,17 @@ class mailstation extends rcube_plugin
 			$this->init_extmail_ui();
 		}
 	}
+	
+	function check_recent($arg)
+	{
+		$check_all = $arg['all'];
+		$check_ext = (bool)$this->rc->config->get('extmailallow');
+		
+		if ($check_ext && $check_all) {
+			$cmd = RCMAIL_FETCH_EXEC . ' ' . escapeshellarg($this->user->get_username());
+			$buffer = system($cmd.' -4');
+		}
+	}	
 	
 	function task_change($arg)
 	{
